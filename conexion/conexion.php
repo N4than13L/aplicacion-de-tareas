@@ -4,7 +4,7 @@ function &call_mysqli()
     static $_mysqli = null; // the singleton pattern 
     if (is_null($_mysqli)) {
         // connect to MySQLi server, call mysqli class  
-        $_mysqli = new mysqli("127.0.0.1", "root", "", "tareas");
+        $_mysqli = new mysqli("containers-us-west-171.railway.app", "root", "3nl9hcFkweHoHLMi2nbh", "railway");
 
         // echo "Conectado";
 
@@ -16,4 +16,3 @@ function &call_mysqli()
     }
     return $_mysqli;
 }
-
